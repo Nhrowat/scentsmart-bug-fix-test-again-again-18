@@ -672,7 +672,7 @@ const Index = () => {
               occasion="Parties & Events"
               savings={83}
               available={true}
-              fragranticaUrl="https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Side-Effect-52211.html"
+              fragranticaUrl="https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Side-Effect-42260.html"
               notes={{
                 top: ["Rum", "Cinnamon", "Vanilla"],
                 heart: ["Tobacco", "Sandalwood"],
