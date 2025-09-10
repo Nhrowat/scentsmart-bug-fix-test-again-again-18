@@ -619,7 +619,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 max-w-7xl mx-auto">
             {/* Sunset Hour */}
             <FragranceCard
               name="Sunset Hour"
@@ -677,6 +677,46 @@ const Index = () => {
                 top: ["Rum", "Cinnamon", "Vanilla"],
                 heart: ["Tobacco", "Sandalwood"],
                 base: ["Saffron", "Musk"]
+              }}
+            />
+            
+            {/* Queening */}
+            <FragranceCard
+              name="Queening"
+              brand="Mind Games"
+              originalPrice={270}
+              clonePrice={45}
+              cloneName="Rumor Has It"
+              scent="Mysterious, bold"
+              season="Fall"
+              occasion="Unique, signature"
+              savings={83}
+              available={true}
+              fragranticaUrl="https://www.fragrantica.com/perfume/Mind-Games/Queening-89898.html"
+              notes={{
+                top: ["Cotton Flower", "Apple", "Cypress"],
+                heart: ["Orris Root", "Rum", "Saffron"],
+                base: ["Vanilla", "Coconut", "Musk"]
+              }}
+            />
+            
+            {/* Grand Soir */}
+            <FragranceCard
+              name="Grand Soir"
+              brand="MFK"
+              originalPrice={185}
+              clonePrice={45}
+              cloneName="Halo"
+              scent="Amber, vanilla, warm"
+              season="Winter"
+              occasion="Date nights, luxury"
+              savings={76}
+              available={true}
+              fragranticaUrl="https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/Grand-Soir-40816.html"
+              notes={{
+                top: ["Spanish Labdanum", "Orange"],
+                heart: ["Lavender", "Siam Benzoin"],
+                base: ["Amber", "Vanilla", "Tonka Bean", "Musk", "Cedar"]
               }}
             />
           </div>
