@@ -607,7 +607,82 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured card moved into the collection grid below */}
+      {/* This Month's Fragrances */}
+      <section className="py-16 bg-gradient-card">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-heading font-bold text-foreground mb-4">
+              This Month's Featured Fragrances
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Our handpicked selection for this month - don't miss these gems
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Sunset Hour */}
+            <FragranceCard
+              name="Sunset Hour"
+              brand="Goldfield & Banks"
+              originalPrice={167}
+              clonePrice={0}
+              cloneName="No dupe available"
+              scent="Fruity, warm, gourmand"
+              season="Summer afternoon & evening"
+              occasion="Romantic, beachy vibes"
+              savings={0}
+              available={false}
+              fragranticaUrl="https://www.fragrantica.com/perfume/Goldfield-Banks-Australia/Sunset-Hour-70950.html"
+              notes={{
+                top: ["Desert Peach (Quandong)", "Raspberry", "Mandarin Orange"],
+                heart: ["Jasmine Sambac", "Ginger", "Pink Pepper", "Coconut Cream"],
+                base: ["Sandalwood", "Cashmere Wood", "Benzoin"]
+              }}
+            />
+            
+            {/* Tales of Amber */}
+            <FragranceCard
+              name="Tales of Amber"
+              brand="Goldfield & Banks"
+              originalPrice={167}
+              clonePrice={0}
+              cloneName="No dupe available"
+              scent="Amber, woody"
+              season="Fall"
+              occasion="Fall evenings"
+              savings={0}
+              available={false}
+              fragranticaUrl="https://www.fragrantica.com/perfume/Goldfield-Banks-Australia/Tales-of-Amber-111767.html"
+              notes={{
+                top: ["Moss", "Orange Blossom"],
+                heart: ["Orris", "Cinnamon", "Musk", "Labdanum"],
+                base: ["Agarwood (Oud)", "Ambergris", "Vanillin", "Labdanum"]
+              }}
+            />
+            
+            {/* Side Effect */}
+            <FragranceCard
+              name="Side Effect"
+              brand="Initio"
+              originalPrice={270}
+              clonePrice={45}
+              cloneName="The Hype"
+              scent="Boozy, spicy, tobacco"
+              season="Fall & Nightlife"
+              occasion="Parties & Events"
+              savings={83}
+              available={true}
+              fragranticaUrl="https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Side-Effect-52211.html"
+              notes={{
+                top: ["Rum", "Cinnamon", "Vanilla"],
+                heart: ["Tobacco", "Sandalwood"],
+                base: ["Saffron", "Musk"]
+              }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Fragrance Library */}
       <section id="collection" className="py-20 bg-gradient-accent">
         <div className="container mx-auto px-4">
