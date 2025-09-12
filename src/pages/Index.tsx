@@ -215,7 +215,7 @@ const fragrances: Fragrance[] = [
     savings: 83,
     available: true,
     tags: ["Spring", "Fall", "Citrus", "Musky"],
-    fragranticaUrl: "https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Musk-Therapy-67314.html",
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Musk-Therapy-66097.html",
     notes: {
       top: ["Bergamot", "Mandarin"],
       heart: ["White Magnolia", "Black Currant"],
@@ -341,7 +341,7 @@ const fragrances: Fragrance[] = [
     savings: 85,
     available: true,
     tags: ["Summer", "Fresh", "Aquatic"],
-    fragranticaUrl: "https://www.fragrantica.com/perfume/Goldfield-Banks-Australia/Pacific-Rock-Moss-47466.html",
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Goldfield-Banks-Australia/Pacific-Rock-Moss-44120.html",
     notes: {
       top: ["Italian lemon", "Sage", "Geranium"],
       heart: ["Virginia cedar"],
@@ -404,7 +404,7 @@ const fragrances: Fragrance[] = [
     savings: 0,
     available: false,
     tags: ["Spring", "Fresh", "Ginger", "Spicy"],
-    fragranticaUrl: "https://www.fragrantica.com/perfume/Goldfield-Banks-Australia/Ingenious-Ginger-69992.html",
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Goldfield-Banks-Australia/Ingenious-Ginger-81895.html",
     notes: {
       top: ["Ginger flower", "Lemon", "Bergamot"],
       heart: ["Mandarin", "Magnolia", "Jasmine", "Rose"],
@@ -425,7 +425,7 @@ const fragrances: Fragrance[] = [
     savings: 60,
     available: true,
     tags: ["Spring", "Summer", "Fruity", "Aquatic"],
-    fragranticaUrl: "https://www.fragrantica.com/perfume/Room-1015/Wavechild-61835.html",
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Room-1015/Wavechild-91364.html",
     notes: {
       top: ["Mandarin Orange", "Orange", "Lemon"],
       heart: ["Watermelon", "Coconut"],
