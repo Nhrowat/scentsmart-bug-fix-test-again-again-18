@@ -515,6 +515,27 @@ const fragrances: Fragrance[] = [
       heart: ["Jasmine Sambac", "Ginger", "Pink Pepper", "Coconut Cream"],
       base: ["Sandalwood", "Cashmere Wood", "Benzoin"]
     }
+  },
+  {
+    name: "Sun Song 2025",
+    brand: "Louis Vuitton",
+    designer: "Jacques Cavallier-Belletrud",
+    niche: "Luxury Niche",
+    originalPrice: 300,
+    clonePrice: 45,
+    cloneName: "Citrus Fever",
+    scent: "Bright citrus, joyful",
+    season: "Summer",
+    occasion: "Daytime, uplifting",
+    savings: 85,
+    available: true,
+    tags: ["Summer", "Citrus", "Fresh", "Uplifting", "Daytime"],
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Louis-Vuitton/Sun-Song-2025-107116.html",
+    notes: {
+      top: ["Lemon", "Petitgrain"],
+      heart: ["Orange Blossom", "Neroli"],
+      base: ["Musk"]
+    }
   }
 ];
 
@@ -717,6 +738,26 @@ const Index = () => {
                 top: ["Spanish Labdanum", "Orange"],
                 heart: ["Lavender", "Siam Benzoin"],
                 base: ["Amber", "Vanilla", "Tonka Bean", "Musk", "Cedar"]
+              }}
+            />
+            
+            {/* Sun Song 2025 */}
+            <FragranceCard
+              name="Sun Song 2025"
+              brand="Louis Vuitton"
+              originalPrice={300}
+              clonePrice={45}
+              cloneName="Citrus Fever"
+              scent="Bright citrus, joyful"
+              season="Summer"
+              occasion="Daytime, uplifting"
+              savings={85}
+              available={true}
+              fragranticaUrl="https://www.fragrantica.com/perfume/Louis-Vuitton/Sun-Song-2025-107116.html"
+              notes={{
+                top: ["Lemon", "Petitgrain"],
+                heart: ["Orange Blossom", "Neroli"],
+                base: ["Musk"]
               }}
             />
           </div>
