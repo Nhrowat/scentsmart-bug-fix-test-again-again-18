@@ -265,17 +265,17 @@ const fragrances: Fragrance[] = [
     }
   },
   {
-    name: "Vanilla Voyage",
+    name: "Bianco Latte",
     brand: "Giardini Di Toscana",
     designer: "Silvia Monti",
     niche: "Italian Niche",
     originalPrice: 125,
-    clonePrice: 40,
+    clonePrice: 45,
     cloneName: "Vanilla Dream",
     scent: "Milky, vanilla sweet",
     season: "Winter",
     occasion: "Cozy, romantic",
-    savings: 68,
+    savings: 64,
     available: true,
     tags: ["Winter", "Sweet", "Vanilla"],
     fragranticaUrl: "https://www.fragrantica.com/perfume/Giardini-Di-Toscana/Bianco-Latte-64757.html",
@@ -307,17 +307,17 @@ const fragrances: Fragrance[] = [
     }
   },
   {
-    name: "Paris Oud",
+    name: "Grand Soir",
     brand: "MFK",
     designer: "Francis Kurkdjian",
     niche: "French Haute Parfumerie",
     originalPrice: 185,
-    clonePrice: 35,
+    clonePrice: 45,
     cloneName: "Halo",
     scent: "Amber, vanilla, warm",
     season: "Winter",
     occasion: "Date nights, luxury",
-    savings: 81,
+    savings: 76,
     available: true,
     tags: ["Winter", "Amber", "Vanilla"],
     fragranticaUrl: "https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/Grand-Soir-40816.html",
@@ -536,27 +536,6 @@ const fragrances: Fragrance[] = [
       heart: ["Orange Blossom", "Neroli"],
       base: ["Musk"]
     }
-  },
-  {
-    name: "Greenly",
-    brand: "Byredo",
-    designer: "Jerome Epinette",
-    niche: "Swedish Niche",
-    originalPrice: 165,
-    clonePrice: 45,
-    cloneName: "Fresh Garden",
-    scent: "Green, fresh, natural",
-    season: "Spring",
-    occasion: "Daily, office safe",
-    savings: 73,
-    available: true,
-    tags: ["Spring", "Green", "Fresh", "Natural"],
-    fragranticaUrl: "https://www.fragrantica.com/perfume/Byredo/Greenly-79073.html",
-    notes: {
-      top: ["Green Leaves", "Ivy", "Mint"],
-      heart: ["Violet Leaf", "Green Mandarin"],
-      base: ["Fig", "White Musk"]
-    }
   }
 ];
 
@@ -742,17 +721,17 @@ const Index = () => {
               }}
             />
             
-            {/* Paris Oud */}
+            {/* Grand Soir */}
             <FragranceCard
-              name="Paris Oud"
+              name="Grand Soir"
               brand="MFK"
               originalPrice={185}
-              clonePrice={35}
+              clonePrice={45}
               cloneName="Halo"
               scent="Amber, vanilla, warm"
               season="Winter"
               occasion="Date nights, luxury"
-              savings={81}
+              savings={76}
               available={true}
               fragranticaUrl="https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/Grand-Soir-40816.html"
               notes={{
@@ -817,6 +796,26 @@ const Index = () => {
             <div className="lg:col-span-3">
               {filteredFragrances.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                  {/* Always show Sunset Hour as part of the library */}
+                  <FragranceCard
+                    name="Sunset Hour"
+                    brand="Goldfield & Banks"
+                    originalPrice={167}
+                    clonePrice={0}
+                    cloneName="No dupe available"
+                    scent="Fruity, warm, gourmand"
+                    season="Summer afternoon & evening"
+                    occasion="Romantic, beachy vibes"
+                    savings={0}
+                    available={false}
+                    fragranticaUrl="https://www.fragrantica.com/perfume/Goldfield-Banks-Australia/Sunset-Hour-70950.html"
+                    notes={{
+                      top: ["Desert Peach (Quandong)", "Raspberry", "Mandarin Orange"],
+                      heart: ["Jasmine Sambac", "Ginger", "Pink Pepper", "Coconut Cream"],
+                      base: ["Sandalwood", "Cashmere Wood", "Benzoin"],
+                    }}
+                  />
+
                   {filteredFragrances.map((fragrance, index) => (
                     <FragranceCard key={index} {...fragrance} />
                   ))}
