@@ -1,4 +1,10 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import * as React from 'react';
+
+// Debug: Check if React is properly loaded
+console.log('AdminContext: React loaded?', !!React);
+console.log('AdminContext: useState available?', !!React.useState);
+
+const { createContext, useContext, useState } = React;
 
 interface AdminContextType {
   isAuthenticated: boolean;
@@ -16,10 +22,11 @@ export const useAdmin = () => {
 };
 
 interface AdminProviderProps {
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
 export const AdminProvider: React.FC<AdminProviderProps> = ({ children }) => {
+  console.log('AdminProvider: About to call useState, React is:', !!React);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   return (
