@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input";
 import { ImagePlus } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
-import { useAdmin } from "@/contexts/AdminContext";
 
 interface ProtectedImageUploadProps {
   onImageUpload: (file: File) => Promise<void>;
@@ -19,12 +18,11 @@ const ProtectedImageUpload = ({
   hasImage, 
   fragranceName 
 }: ProtectedImageUploadProps) => {
-  const { isAuthenticated, setIsAuthenticated } = useAdmin();
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [password, setPassword] = useState("");
 
   const handleUploadClick = () => {
-    console.log(`Upload click for: ${fragranceName}`);
     if (isAuthenticated) {
       document.getElementById(`file-${fragranceName}`)?.click();
     } else {
@@ -38,7 +36,6 @@ const ProtectedImageUpload = ({
       setIsDialogOpen(false);
       setPassword("");
       toast.success("Admin access granted!");
-      // Trigger file input after authentication
       setTimeout(() => {
         document.getElementById(`file-${fragranceName}`)?.click();
       }, 100);

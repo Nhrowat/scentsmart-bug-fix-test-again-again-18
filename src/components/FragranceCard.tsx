@@ -6,7 +6,6 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { useSupabaseImageStorage } from "@/hooks/useSupabaseImageStorage";
 import { toast } from "sonner";
-import { useAdmin } from "@/contexts/AdminContext";
 import ProtectedImageUpload from "@/components/ProtectedImageUpload";
 
 // Static image imports
@@ -65,7 +64,7 @@ const FragranceCard = ({
   notes
 }: FragranceCardProps) => {
   const { getImage, setImage, removeImage } = useSupabaseImageStorage();
-  const { isAuthenticated, setIsAuthenticated } = useAdmin();
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
   const [isRemoveDialogOpen, setIsRemoveDialogOpen] = useState(false);
   const [password, setPassword] = useState("");
