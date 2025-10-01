@@ -15,7 +15,7 @@ export interface FragranceFilters {
   seasons: string[];
   scentProfiles: string[];
   priceRange: [number, number];
-  dupeAvailability: 'all' | 'originals' | 'clones';
+  dupeAvailability: 'all' | 'originals' | 'clones' | 'unreleased';
   sortBy: string;
   searchQuery: string;
 }
@@ -252,6 +252,7 @@ const FragranceFilters = ({ filters, onFiltersChange, isOpen, onToggle }: Fragra
                   <SelectItem value="all">Show All</SelectItem>
                   <SelectItem value="originals">Originals Only</SelectItem>
                   <SelectItem value="clones">Clones Available</SelectItem>
+                  <SelectItem value="unreleased">Unreleased</SelectItem>
                 </SelectContent>
               </Select>
             </div>

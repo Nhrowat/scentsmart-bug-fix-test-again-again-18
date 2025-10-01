@@ -85,6 +85,10 @@ export const useFragranceFilters = (fragrances: Fragrance[]) => {
       if (filters.dupeAvailability === 'clones' && !fragrance.available) {
         return false;
       }
+      if (filters.dupeAvailability === 'unreleased') {
+        const isUnreleased = fragrance.tags.includes('Unreleased');
+        if (!isUnreleased) return false;
+      }
 
       return true;
     });

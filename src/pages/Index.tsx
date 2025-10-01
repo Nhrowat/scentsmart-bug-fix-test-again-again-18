@@ -538,6 +538,27 @@ const fragrances: Fragrance[] = [
       heart: ["Orange Blossom", "Neroli"],
       base: ["Musk"]
     }
+  },
+  {
+    name: "Moon Tale",
+    brand: "Louis Vuitton",
+    designer: "Jacques Cavallier-Belletrud",
+    niche: "Luxury Niche",
+    originalPrice: 300,
+    clonePrice: 0,
+    cloneName: "No dupe available",
+    scent: "Mysterious, elegant",
+    season: "All Seasons",
+    occasion: "Special occasions",
+    savings: 0,
+    available: false,
+    tags: ["Unreleased", "Elegant", "Mysterious"],
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Louis-Vuitton/Moon-Tale-115896.html",
+    notes: {
+      top: [],
+      heart: [],
+      base: []
+    }
   }
 ];
 
@@ -666,66 +687,6 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8 max-w-7xl mx-auto">
-            {/* Sunset Hour */}
-            <FragranceCard
-              name="Sunset Hour"
-              brand="Goldfield & Banks"
-              originalPrice={167}
-              clonePrice={0}
-              cloneName="No dupe available"
-              scent="Fruity, warm, gourmand"
-              season="Summer afternoon & evening"
-              occasion="Romantic, beachy vibes"
-              savings={0}
-              available={false}
-              fragranticaUrl="https://www.fragrantica.com/perfume/Goldfield-Banks-Australia/Sunset-Hour-70950.html"
-              notes={{
-                top: ["Desert Peach (Quandong)", "Raspberry", "Mandarin Orange"],
-                heart: ["Jasmine Sambac", "Ginger", "Pink Pepper", "Coconut Cream"],
-                base: ["Sandalwood", "Cashmere Wood", "Benzoin"]
-              }}
-            />
-            
-            {/* Tales of Amber */}
-            <FragranceCard
-              name="Tales of Amber"
-              brand="Goldfield & Banks"
-              originalPrice={167}
-              clonePrice={0}
-              cloneName="No dupe available"
-              scent="Amber, woody"
-              season="Fall"
-              occasion="Fall evenings"
-              savings={0}
-              available={false}
-              fragranticaUrl="https://www.fragrantica.com/perfume/Goldfield-Banks-Australia/Tales-of-Amber-111767.html"
-              notes={{
-                top: ["Moss", "Orange Blossom"],
-                heart: ["Orris", "Cinnamon", "Musk", "Labdanum"],
-                base: ["Agarwood (Oud)", "Ambergris", "Vanillin", "Labdanum"]
-              }}
-            />
-            
-            {/* Side Effect */}
-            <FragranceCard
-              name="Side Effect"
-              brand="Initio"
-              originalPrice={270}
-              clonePrice={45}
-              cloneName="The Hype"
-              scent="Boozy, spicy, tobacco"
-              season="Fall & Nightlife"
-              occasion="Parties & Events"
-              savings={83}
-              available={true}
-              fragranticaUrl="https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Side-Effect-42260.html"
-              notes={{
-                top: ["Rum", "Cinnamon", "Vanilla"],
-                heart: ["Tobacco", "Sandalwood"],
-                base: ["Saffron", "Musk"]
-              }}
-            />
-            
             {/* Queening */}
             <FragranceCard
               name="Queening"
@@ -746,43 +707,103 @@ const Index = () => {
               }}
             />
             
-            {/* Grand Soir */}
+            {/* Prodigy */}
             <FragranceCard
-              name="Grand Soir"
-              brand="MFK"
-              originalPrice={185}
+              name="Prodigy"
+              brand="Mind Games"
+              originalPrice={270}
               clonePrice={45}
-              cloneName="Halo"
-              scent="Amber, vanilla, warm"
+              cloneName="Paragon"
+              scent="Woody, refined"
               season="Winter"
-              occasion="Date nights, luxury"
-              savings={76}
+              occasion="Formal or introspective"
+              savings={83}
               available={true}
-              fragranticaUrl="https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/Grand-Soir-40816.html"
+              fragranticaUrl="https://www.fragrantica.com/perfume/Mind-Games/Prodigy-101192.html"
               notes={{
-                top: ["Spanish Labdanum", "Orange"],
-                heart: ["Lavender", "Siam Benzoin"],
-                base: ["Amber", "Vanilla", "Tonka Bean", "Musk", "Cedar"]
+                top: ["Rose", "Bergamot", "Cardamom"],
+                heart: ["Longoza", "Patchouli"],
+                base: ["Vanilla", "Blonde Woods", "Sandalwood"]
               }}
             />
             
-            {/* Sun Song 2025 */}
+            {/* Météore */}
             <FragranceCard
-              name="Sun Song 2025"
+              name="Météore"
               brand="Louis Vuitton"
               originalPrice={300}
               clonePrice={45}
-              cloneName="Citrus Fever"
-              scent="Bright citrus, joyful"
-              season="Summer"
-              occasion="Daytime, uplifting"
+              cloneName="Astro"
+              scent="Fresh, zesty"
+              season="Spring & Summer"
+              occasion="Daily, clean"
               savings={85}
               available={true}
-              fragranticaUrl="https://www.fragrantica.com/perfume/Louis-Vuitton/Sun-Song-2025-107116.html"
+              fragranticaUrl="https://www.fragrantica.com/perfume/Louis-Vuitton/Meteore-62251.html"
               notes={{
-                top: ["Lemon", "Petitgrain"],
-                heart: ["Orange Blossom", "Neroli"],
-                base: ["Musk"]
+                top: ["Mandarin Orange", "Sicilian Orange", "Calabrian Bergamot"],
+                heart: ["Pink Pepper", "Tunisian Neroli", "Indonesian Nutmeg", "Pepper", "Guatemalan Cardamom"],
+                base: ["Java Vetiver Oil"]
+              }}
+            />
+            
+            {/* Ingenious Ginger */}
+            <FragranceCard
+              name="Ingenious Ginger"
+              brand="Goldfield & Banks"
+              originalPrice={167}
+              clonePrice={0}
+              cloneName="No dupe available"
+              scent="Ginger, fresh"
+              season="Spring"
+              occasion="Light and playful"
+              savings={0}
+              available={false}
+              fragranticaUrl="https://www.fragrantica.com/perfume/Goldfield-Banks-Australia/Ingenious-Ginger-81895.html"
+              notes={{
+                top: ["Ginger flower", "Lemon", "Bergamot"],
+                heart: ["Mandarin", "Magnolia", "Jasmine", "Rose"],
+                base: ["Vanilla", "Amber", "Sandalwood", "Cashmeran", "Musk", "Patchouli"]
+              }}
+            />
+            
+            {/* Musk Therapy */}
+            <FragranceCard
+              name="Musk Therapy"
+              brand="Initio"
+              originalPrice={270}
+              clonePrice={45}
+              cloneName="Musk Bliss"
+              scent="Clean musk, citrus"
+              season="Spring & Fall"
+              occasion="Daily, office safe"
+              savings={83}
+              available={true}
+              fragranticaUrl="https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Musk-Therapy-66097.html"
+              notes={{
+                top: ["Bergamot", "Mandarin"],
+                heart: ["White Magnolia", "Black Currant"],
+                base: ["White Sandalwood", "Pink Musk", "White Musk"]
+              }}
+            />
+            
+            {/* Pacific Rock Moss */}
+            <FragranceCard
+              name="Pacific Rock Moss"
+              brand="Goldfield & Banks"
+              originalPrice={167}
+              clonePrice={25}
+              cloneName="Sama"
+              scent="Aquatic, salty fresh"
+              season="Summer"
+              occasion="Clean daily wear"
+              savings={85}
+              available={true}
+              fragranticaUrl="https://www.fragrantica.com/perfume/Goldfield-Banks-Australia/Pacific-Rock-Moss-44120.html"
+              notes={{
+                top: ["Italian lemon", "Sage", "Geranium"],
+                heart: ["Virginia cedar"],
+                base: ["Marine", "Fresh feel"]
               }}
             />
           </div>
