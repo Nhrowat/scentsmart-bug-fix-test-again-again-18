@@ -1,7 +1,7 @@
-import React from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './index.css';
 
 // Register Service Worker for PWA functionality
 if ('serviceWorker' in navigator) {
@@ -25,12 +25,9 @@ if ('serviceWorker' in navigator) {
 let deferredPrompt: any;
 window.addEventListener('beforeinstallprompt', (e) => {
   console.log('PWA install prompt available');
-  // Prevent Chrome 67 and earlier from automatically showing the prompt
   e.preventDefault();
-  // Stash the event so it can be triggered later
   deferredPrompt = e;
   
-  // Show custom install button
   const installButton = document.createElement('button');
   installButton.textContent = '📱 Install App';
   installButton.style.cssText = `
@@ -62,7 +59,6 @@ window.addEventListener('beforeinstallprompt', (e) => {
   document.body.appendChild(installButton);
 });
 
-// Handle successful PWA installation
 window.addEventListener('appinstalled', () => {
   console.log('PWA was installed successfully');
   const installButton = document.querySelector('button[style*="Install App"]') as HTMLElement;
@@ -71,4 +67,11 @@ window.addEventListener('appinstalled', () => {
   }
 });
 
-createRoot(document.getElementById("root")!).render(<App />);
+const rootElement = document.getElementById("root");
+if (rootElement) {
+  ReactDOM.createRoot(rootElement).render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+}
