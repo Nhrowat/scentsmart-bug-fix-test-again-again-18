@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useContext, useState, ReactNode } from 'react';
 
 interface AdminContextType {
   isAuthenticated: boolean;
@@ -19,7 +19,7 @@ interface AdminProviderProps {
   children: ReactNode;
 }
 
-export const AdminProvider: React.FC<AdminProviderProps> = ({ children }) => {
+export const AdminProvider = ({ children }: AdminProviderProps) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   return (
