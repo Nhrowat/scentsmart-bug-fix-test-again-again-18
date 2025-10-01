@@ -18,6 +18,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   optimizeDeps: {
+    force: true,
     include: [
       'react',
       'react-dom',
@@ -27,6 +28,7 @@ export default defineConfig(({ mode }) => ({
       '@tanstack/react-query',
     ],
   },
+  cacheDir: '.vite-cache',
   build: {
     commonjsOptions: {
       include: [/node_modules/],
