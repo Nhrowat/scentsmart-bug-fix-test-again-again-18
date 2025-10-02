@@ -38,9 +38,9 @@ const ThisMonthsFragrance = () => {
         <section className="py-16 bg-gradient-card">
           <div className="container mx-auto px-4">
             <Button
-              variant="ghost"
+              variant="outline"
               onClick={() => navigate("/")}
-              className="mb-8"
+              className="mb-8 hover:scale-105 transition-transform"
             >
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Home
