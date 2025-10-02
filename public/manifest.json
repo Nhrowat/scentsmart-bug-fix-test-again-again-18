@@ -10,15 +10,16 @@
   "start_url": "/",
   "icons": [
     {
-      "src": "/favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/app-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "/placeholder.svg",
-      "type": "image/svg+xml",
+      "src": "/app-icon.png",
       "sizes": "512x512",
-      "purpose": "any maskable"
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "categories": ["lifestyle", "shopping"],
@@ -28,7 +29,7 @@
       "short_name": "Browse",
       "description": "View all available fragrances",
       "url": "/#collection",
-      "icons": [{ "src": "/placeholder.svg", "sizes": "96x96" }]
+      "icons": [{ "src": "/app-icon.png", "sizes": "96x96" }]
     }
   ]
 }
