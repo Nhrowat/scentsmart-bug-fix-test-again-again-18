@@ -2,8 +2,13 @@ import FragranceCard from "@/components/FragranceCard";
 import BrandingHeader from "@/components/BrandingHeader";
 import BrandingFooter from "@/components/BrandingFooter";
 import ContactButton from "@/components/ContactButton";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const ThisMonthsFragrance = () => {
+  const navigate = useNavigate();
+  
   const featuredFragrance = {
     name: "Moon Tale",
     brand: "Louis Vuitton",
@@ -32,6 +37,15 @@ const ThisMonthsFragrance = () => {
         {/* Hero Section */}
         <section className="py-16 bg-gradient-card">
           <div className="container mx-auto px-4">
+            <Button
+              variant="ghost"
+              onClick={() => navigate("/")}
+              className="mb-8"
+            >
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Home
+            </Button>
+            
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
                 This Month's Featured Fragrance
