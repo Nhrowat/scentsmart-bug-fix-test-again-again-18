@@ -209,12 +209,12 @@ const fragrances: Fragrance[] = [
     designer: "Alexandra Carlin",
     niche: "Niche Parfums",
     originalPrice: 270,
-    clonePrice: 45,
-    cloneName: "Musk Bliss",
+    clonePrice: 35,
+    cloneName: "Glorious Oud",
     scent: "Clean musk, citrus",
     season: "Spring & Fall",
     occasion: "Daily, office safe",
-    savings: 83,
+    savings: 87,
     available: true,
     tags: ["Spring", "Fall", "Citrus", "Musky"],
     fragranticaUrl: "https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Musk-Therapy-66097.html",
@@ -772,12 +772,12 @@ const Index = () => {
               name="Musk Therapy"
               brand="Initio"
               originalPrice={270}
-              clonePrice={45}
-              cloneName="Musk Bliss"
+              clonePrice={35}
+              cloneName="Glorious Oud"
               scent="Clean musk, citrus"
               season="Spring & Fall"
               occasion="Daily, office safe"
-              savings={83}
+              savings={87}
               available={true}
               fragranticaUrl="https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Musk-Therapy-66097.html"
               notes={{
