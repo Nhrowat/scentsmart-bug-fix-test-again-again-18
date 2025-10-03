@@ -16,10 +16,20 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-    dedupe: ['react', 'react-dom'],
+    dedupe: [
+      'react',
+      'react-dom',
+      'react/jsx-runtime',
+      'next-themes',
+      'react-router-dom',
+      '@tanstack/react-query'
+    ],
   },
   optimizeDeps: {
-    force: true,
+    esbuildOptions: {
+      mainFields: ['module', 'main'],
+      resolveExtensions: ['.mjs', '.js', '.jsx', '.json'],
+    },
     include: [
       'react',
       'react-dom',
@@ -27,6 +37,8 @@ export default defineConfig(({ mode }) => ({
       'react/jsx-dev-runtime',
       '@radix-ui/react-tooltip',
       '@tanstack/react-query',
+      'next-themes',
+      'react-router-dom',
     ],
   },
   cacheDir: '.vite-cache',
