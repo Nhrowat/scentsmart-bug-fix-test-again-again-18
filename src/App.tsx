@@ -4,7 +4,6 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
-import OfflineIndicator from "@/components/OfflineIndicator";
 import Index from "./pages/Index";
 import ThisMonthsFragrance from "./pages/ThisMonthsFragrance";
 import PersonalFavorites from "./pages/PersonalFavorites";
@@ -17,7 +16,6 @@ const App: React.FC = () => {
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
-          <OfflineIndicator />
           <Toaster />
           <Sonner />
           <Routes>
