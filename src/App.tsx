@@ -14,21 +14,23 @@ const queryClient = new QueryClient();
 
 const App: React.FC = () => {
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-      <QueryClientProvider client={queryClient}>
-        <OfflineIndicator />
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/this-months-fragrance" element={<ThisMonthsFragrance />} />
-            <Route path="/personal-favorites" element={<PersonalFavorites />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </QueryClientProvider>
-    </ThemeProvider>
+    <React.StrictMode>
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <QueryClientProvider client={queryClient}>
+          <BrowserRouter>
+            <OfflineIndicator />
+            <Toaster />
+            <Sonner />
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/this-months-fragrance" element={<ThisMonthsFragrance />} />
+              <Route path="/personal-favorites" element={<PersonalFavorites />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </QueryClientProvider>
+      </ThemeProvider>
+    </React.StrictMode>
   );
 };
 
