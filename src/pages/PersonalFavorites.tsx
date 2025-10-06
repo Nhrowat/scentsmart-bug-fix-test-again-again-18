@@ -113,27 +113,6 @@ const personalFavorites: Fragrance[] = [
     }
   },
   {
-    name: "Prodigy",
-    brand: "Mind Games",
-    designer: "Independent Creator",
-    niche: "Niche Artisan",
-    originalPrice: 270,
-    clonePrice: 45,
-    cloneName: "Paragon",
-    scent: "Woody, refined",
-    season: "Winter",
-    occasion: "Formal or introspective",
-    savings: 83,
-    available: true,
-    tags: ["Winter", "Woody"],
-    fragranticaUrl: "https://www.fragrantica.com/perfume/Mind-Games/Prodigy-101192.html",
-    notes: {
-      top: ["Rose", "Bergamot", "Cardamom"],
-      heart: ["Longoza", "Patchouli"],
-      base: ["Vanilla", "Blonde Woods", "Sandalwood"]
-    }
-  },
-  {
     name: "Météore",
     brand: "Louis Vuitton",
     designer: "Jacques Cavallier-Belletrud",
