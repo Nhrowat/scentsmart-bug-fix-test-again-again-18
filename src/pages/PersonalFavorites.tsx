@@ -153,6 +153,27 @@ const personalFavorites: Fragrance[] = [
       heart: ["Mandarin", "Magnolia", "Jasmine", "Rose"],
       base: ["Vanilla", "Amber", "Sandalwood", "Cashmeran", "Musk", "Patchouli"]
     }
+  },
+  {
+    name: "Herbes Troublantes",
+    brand: "Guerlain",
+    designer: "Thierry Wasser",
+    niche: "Luxury Niche",
+    originalPrice: 330,
+    clonePrice: 0,
+    cloneName: "",
+    scent: "Herbal, fresh",
+    season: "Spring",
+    occasion: "Fresh, unique",
+    savings: 0,
+    available: false,
+    tags: ["Spring", "Herbal", "Fresh"],
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Guerlain/Herbes-Troublantes-70398.html",
+    notes: {
+      top: ["Bergamot"],
+      heart: ["Orange Blossom"],
+      base: ["White Musk"]
+    }
   }
 ];
 
