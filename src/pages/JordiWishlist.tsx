@@ -58,6 +58,42 @@ const jordiWishlist: Fragrance[] = [
     },
     fragranticaUrl: "https://www.fragrantica.com/perfume/Xerjoff/40-Knots-16445.html",
     available: true
+  },
+  {
+    name: "Love O-Matic",
+    brand: "Room 1015",
+    originalPrice: 150,
+    cloneName: "",
+    clonePrice: 0,
+    savings: 0,
+    scent: "Sweet, fruity, and gourmand with floral undertones",
+    season: "Spring/Summer",
+    occasion: "Casual wear, fun outings, or daytime events",
+    notes: {
+      top: ["Strawberry", "Blackcurrant", "Lemon"],
+      heart: ["Ozonic notes", "Bubble Gum"],
+      base: ["Musk", "Ambrette", "Cedar"]
+    },
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Room-1015/Love-O-Matic-108668.html",
+    available: false
+  },
+  {
+    name: "724",
+    brand: "Maison Francis Kurkdjian",
+    originalPrice: 200,
+    cloneName: "",
+    clonePrice: 0,
+    savings: 0,
+    scent: "Fresh, woody, and floral with a modern, airy character",
+    season: "Spring/Summer",
+    occasion: "Casual and elegant daily wear",
+    notes: {
+      top: ["Aldehydes", "Calabrian Bergamot"],
+      heart: ["Egyptian Jasmine", "Mock Orange", "Sweet Pea"],
+      base: ["White Musk", "Sandalwood"]
+    },
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/724-75754.html",
+    available: false
   }
 ];
 
