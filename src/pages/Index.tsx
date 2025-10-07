@@ -574,11 +574,74 @@ const fragrances: Fragrance[] = [
     savings: 0,
     available: false,
     tags: ["Unreleased", "Elegant", "Mysterious"],
-    fragranticaUrl: "https://www.fragrantica.com/perfume/Louis-Vuitton/Moon-Tale-115896.html",
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Louis-Vuitton/Moon-Tale-115408.html",
     notes: {
-      top: [],
-      heart: [],
-      base: []
+      top: ["Peony", "Magnolia", "Jasmine Sambac"],
+      heart: ["Geranium", "Raspberry"],
+      base: ["Musk", "Woods"]
+    }
+  },
+  {
+    name: "Herbes Troublantes",
+    brand: "Guerlain",
+    designer: "Thierry Wasser",
+    niche: "Luxury Niche",
+    originalPrice: 330,
+    clonePrice: 0,
+    cloneName: "",
+    scent: "Herbal, fresh",
+    season: "Spring",
+    occasion: "Fresh, unique",
+    savings: 0,
+    available: false,
+    tags: ["Spring", "Herbal", "Fresh"],
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Guerlain/Herbes-Troublantes-69275.html",
+    notes: {
+      top: ["Bergamot"],
+      heart: ["Orange Blossom"],
+      base: ["White Musk"]
+    }
+  },
+  {
+    name: "Love O-Matic",
+    brand: "Room 1015",
+    designer: "Room 1015",
+    niche: "Niche",
+    originalPrice: 150,
+    clonePrice: 0,
+    cloneName: "",
+    scent: "Sweet, fruity, and gourmand with floral undertones",
+    season: "Spring/Summer",
+    occasion: "Casual wear, fun outings, or daytime events",
+    savings: 0,
+    available: false,
+    tags: ["Spring", "Summer", "Fruity", "Sweet"],
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Room-1015/Love-O-Matic-108668.html",
+    notes: {
+      top: ["Strawberry", "Blackcurrant", "Lemon"],
+      heart: ["Ozonic notes", "Bubble Gum"],
+      base: ["Musk", "Ambrette", "Cedar"]
+    }
+  },
+  {
+    name: "724",
+    brand: "Maison Francis Kurkdjian",
+    designer: "Maison Francis Kurkdjian",
+    niche: "Luxury Niche",
+    originalPrice: 200,
+    clonePrice: 0,
+    cloneName: "",
+    scent: "Fresh, woody, and floral with a modern, airy character",
+    season: "Spring/Summer",
+    occasion: "Casual and elegant daily wear",
+    savings: 0,
+    available: false,
+    tags: ["Spring", "Summer", "Fresh", "Woody"],
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Maison-Francis-Kurkdjian/724-75754.html",
+    notes: {
+      top: ["Aldehydes", "Calabrian Bergamot"],
+      heart: ["Egyptian Jasmine", "Mock Orange", "Sweet Pea"],
+      base: ["White Musk", "Sandalwood"]
     }
   }
 ];
