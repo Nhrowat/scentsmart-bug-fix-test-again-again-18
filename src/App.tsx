@@ -7,6 +7,7 @@ import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
 import ThisMonthsFragrance from "./pages/ThisMonthsFragrance";
 import PersonalFavorites from "./pages/PersonalFavorites";
+import JordiWishlist from "./pages/JordiWishlist";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App: React.FC = () => {
             <Route path="/" element={<Index />} />
             <Route path="/this-months-fragrance" element={<ThisMonthsFragrance />} />
             <Route path="/personal-favorites" element={<PersonalFavorites />} />
+            <Route path="/jordi-wishlist" element={<JordiWishlist />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
