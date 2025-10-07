@@ -643,6 +643,48 @@ const fragrances: Fragrance[] = [
       heart: ["Egyptian Jasmine", "Mock Orange", "Sweet Pea"],
       base: ["White Musk", "Sandalwood"]
     }
+  },
+  {
+    name: "Althair",
+    brand: "Parfums de Marly",
+    designer: "Hamid Merati-Kashani",
+    niche: "Luxury Niche",
+    originalPrice: 290,
+    clonePrice: 50,
+    cloneName: "Liquid Brun",
+    scent: "A warm, sweet, and spicy vanilla fragrance with a rich, ambery base",
+    season: "Fall/Winter",
+    occasion: "Formal events, romantic evenings, or special occasions",
+    savings: 83,
+    available: true,
+    tags: ["Fall", "Winter", "Vanilla", "Warm", "Spicy"],
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Parfums-de-Marly/Althair-84109.html",
+    notes: {
+      top: ["Cinnamon", "Cardamom", "Orange Blossom", "Bergamot"],
+      heart: ["Bourbon Vanilla", "Elemi"],
+      base: ["Praline", "Musk", "Ambroxan", "Guaiac Wood", "Tonka Bean", "Candied Almond"]
+    }
+  },
+  {
+    name: "40 Knots",
+    brand: "Xerjoff",
+    designer: "Jacques Flori",
+    niche: "Luxury Niche",
+    originalPrice: 290,
+    clonePrice: 30,
+    cloneName: "Yacht Club",
+    scent: "Woody, salty, and marine with powdery and amber nuances",
+    season: "All Seasons",
+    occasion: "Versatile — daytime, resort wear, or evening sophistication",
+    savings: 90,
+    available: true,
+    tags: ["Marine", "Woody", "Salty", "All Seasons"],
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Xerjoff/40-Knots-16445.html",
+    notes: {
+      top: ["Salt", "Green Notes"],
+      heart: ["Sea Water", "Cedar"],
+      base: ["Woody Notes"]
+    }
   }
 ];
 
