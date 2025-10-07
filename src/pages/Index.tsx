@@ -11,7 +11,7 @@ import { useFragranceFilters, Fragrance } from "@/hooks/useFragranceFilters";
 import { Badge } from "@/components/ui/badge";
 import heroImage from "@/assets/hero-fragrances.jpg";
 import { useNavigate } from "react-router-dom";
-import { Heart, Calendar } from "lucide-react";
+import { Heart, Calendar, Star } from "lucide-react";
 
 const fragrances: Fragrance[] = [
   {
@@ -657,6 +657,16 @@ const Index = () => {
             >
               <Calendar className="w-5 h-5 mr-2" />
               This Month's Pick
+            </Button>
+            
+            <Button 
+              variant="luxury" 
+              size="lg" 
+              onClick={() => navigate('/jordi-wishlist')}
+              className="text-lg px-8 py-4 h-auto"
+            >
+              <Star className="w-5 h-5 mr-2" />
+              Jordi's Wishlist
             </Button>
           </div>
         </div>
