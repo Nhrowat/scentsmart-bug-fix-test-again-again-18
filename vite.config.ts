@@ -8,7 +8,6 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  cacheDir: 'node_modules/.vite',
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
@@ -16,27 +15,6 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      "react": path.resolve(__dirname, "./node_modules/react"),
-      "react-dom": path.resolve(__dirname, "./node_modules/react-dom"),
-    },
-    dedupe: ['react', 'react-dom', 'react/jsx-runtime'],
-  },
-  optimizeDeps: {
-    force: true,
-    esbuildOptions: {
-      mainFields: ['module', 'main'],
-      resolveExtensions: ['.mjs', '.js', '.jsx', '.json'],
-    },
-    include: [
-      'react',
-      'react-dom',
-      'react/jsx-runtime',
-      'react/jsx-dev-runtime',
-    ],
-  },
-  build: {
-    commonjsOptions: {
-      include: [/node_modules/],
     },
   },
 }));
