@@ -41,7 +41,6 @@ export default defineConfig(({ mode }) => ({
       'react-router-dom',
     ],
   },
-  cacheDir: '.vite-cache-v2',
   build: {
     commonjsOptions: {
       include: [/node_modules/],
