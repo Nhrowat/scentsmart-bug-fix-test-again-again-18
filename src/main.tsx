@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 
-// Clean config v9 - removed old hook
+// Force fresh build to clear React hooks cache
+
 // Register Service Worker for PWA functionality
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {

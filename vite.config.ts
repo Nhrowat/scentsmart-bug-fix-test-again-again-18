@@ -12,7 +12,11 @@ export default defineConfig(({ mode }) => ({
     react(),
     mode === 'development' && componentTagger(),
   ].filter(Boolean),
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'next-themes'],
+  },
   resolve: {
+    dedupe: ['react', 'react-dom'],
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },

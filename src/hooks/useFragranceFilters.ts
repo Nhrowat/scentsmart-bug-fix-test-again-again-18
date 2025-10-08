@@ -32,7 +32,7 @@ const defaultFilters: FragranceFilters = {
   searchQuery: ''
 };
 
-export const useFragranceFiltersV2 = (fragrances: Fragrance[]) => {
+export const useFragranceFilters = (fragrances: Fragrance[]) => {
   const [filters, setFilters] = useState<FragranceFilters>(defaultFilters);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
