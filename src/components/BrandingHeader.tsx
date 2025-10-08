@@ -8,21 +8,21 @@ const BrandingHeader = () => {
   
   const navItems = [
     { path: "/", label: "Home", icon: Home },
-    { path: "/personal-favorites", label: "Favorites", icon: Heart },
-    { path: "/this-months-fragrance", label: "This Month", icon: Calendar },
+    { path: "/personal-favorites", label: "Personal Favorites", icon: Heart },
+    { path: "/this-months-fragrance", label: "This Month's Pick", icon: Calendar },
     { path: "/jordi-wishlist", label: "Jordi's Wishlist", icon: Star },
   ];
 
   return (
-    <div className="w-full bg-gradient-primary border-b border-primary-foreground/10 sticky top-0 z-50 shadow-lg">
-      <div className="container mx-auto px-4 py-4">
+    <div className="w-full bg-gradient-primary border-b border-primary-foreground/10">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Brand Badge */}
           <Badge 
             variant="secondary" 
-            className="bg-primary-foreground/20 text-primary-foreground border-primary-foreground/30 text-sm px-4 py-2"
+            className="bg-primary-foreground/20 text-primary-foreground border-primary-foreground/30"
           >
-            🎨 Made by Nhatiscool
+            Made by Nhatiscool
           </Badge>
           
           {/* Navigation */}
@@ -36,15 +36,15 @@ const BrandingHeader = () => {
                   key={item.path}
                   to={item.path}
                   className={cn(
-                    "flex items-center gap-2 px-5 py-2.5 rounded-lg transition-all",
-                    "text-sm font-semibold",
+                    "flex items-center gap-2 px-4 py-2 rounded-lg transition-all",
+                    "text-sm font-medium",
                     isActive 
-                      ? "bg-primary-foreground/30 text-primary-foreground border-2 border-primary-foreground/50 shadow-md scale-105" 
-                      : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/15 border-2 border-transparent"
+                      ? "bg-primary-foreground/20 text-primary-foreground border border-primary-foreground/30" 
+                      : "text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/10"
                   )}
                 >
                   <Icon className="w-4 h-4" />
-                  <span>{item.label}</span>
+                  <span className="hidden sm:inline">{item.label}</span>
                 </Link>
               );
             })}
