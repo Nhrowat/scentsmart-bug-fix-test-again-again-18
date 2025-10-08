@@ -8,7 +8,6 @@ import PersonalFavorites from "./pages/PersonalFavorites";
 import JordiWishlist from "./pages/JordiWishlist";
 import NotFound from "./pages/NotFound";
 
-// Force rebuild to clear React cache
 const queryClient = new QueryClient();
 
 const App: React.FC = () => {
