@@ -8,7 +8,6 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  cacheDir: '.vite-clean',
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
@@ -16,14 +15,6 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      'react': path.resolve(__dirname, './node_modules/react'),
-      'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
     },
-    dedupe: ['react', 'react-dom'],
-  },
-  optimizeDeps: {
-    force: true,
-    include: ['react', 'react-dom'],
-    exclude: [],
   },
 }));
