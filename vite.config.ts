@@ -16,6 +16,7 @@ export default defineConfig(({ mode }) => ({
     include: ['react', 'react-dom', 'next-themes'],
   },
   resolve: {
+    dedupe: ['react', 'react-dom'],
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
