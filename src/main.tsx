@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 
-// Force complete rebuild v4 - React upgraded
+// Force complete cache clear v5
 // Register Service Worker for PWA functionality
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
