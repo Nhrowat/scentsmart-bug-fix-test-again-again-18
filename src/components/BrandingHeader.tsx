@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import ThemeToggle from "./ThemeToggle";
 
 const BrandingHeader = () => {
   return (
@@ -12,7 +13,7 @@ const BrandingHeader = () => {
           >
             Made by Nhatiscool
           </Badge>
-          <div className="w-9" /> {/* Spacer for centering */}
+          <ThemeToggle />
         </div>
       </div>
     </div>
