@@ -667,6 +667,7 @@ const fragrances: Fragrance[] = [
   }
 ];
 
+// Main component
 const Index = () => {
   const navigate = useNavigate();
   const {
