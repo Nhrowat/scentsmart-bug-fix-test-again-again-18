@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Force rebuild v3
 const App: React.FC = () => {
   return (
     <QueryClientProvider client={queryClient}>
