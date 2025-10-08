@@ -1,7 +1,5 @@
-import * as React from 'react';
+import { useState, useMemo } from 'react';
 import { FragranceFilters } from '@/components/FragranceFilters';
-
-const { useState, useMemo } = React;
 
 export interface Fragrance {
   name: string;
