@@ -20,6 +20,5 @@ export default defineConfig(({ mode }) => ({
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'next-themes'],
-    force: true,
   },
 }));
