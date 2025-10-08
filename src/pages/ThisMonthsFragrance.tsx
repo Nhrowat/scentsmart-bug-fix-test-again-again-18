@@ -3,7 +3,7 @@ import BrandingHeader from "@/components/BrandingHeader";
 import BrandingFooter from "@/components/BrandingFooter";
 import ContactButton from "@/components/ContactButton";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Heart, Star } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const ThisMonthsFragrance = () => {
@@ -57,14 +57,31 @@ const ThisMonthsFragrance = () => {
         {/* Hero Section */}
         <section className="py-16 bg-gradient-card">
           <div className="container mx-auto px-4">
-            <Button
-              variant="outline"
-              onClick={() => navigate("/")}
-              className="mb-8 hover:scale-105 transition-transform"
-            >
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Home
-            </Button>
+            <div className="flex flex-wrap gap-4 mb-8">
+              <Button
+                variant="ghost"
+                onClick={() => navigate("/")}
+              >
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Home
+              </Button>
+              
+              <Button 
+                variant="outline" 
+                onClick={() => navigate('/personal-favorites')}
+              >
+                <Heart className="w-4 h-4 mr-2" />
+                Personal Favorites
+              </Button>
+              
+              <Button 
+                variant="outline" 
+                onClick={() => navigate('/jordi-wishlist')}
+              >
+                <Star className="w-4 h-4 mr-2" />
+                Jordi's Wishlist
+              </Button>
+            </div>
             
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">

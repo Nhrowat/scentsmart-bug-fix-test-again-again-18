@@ -3,7 +3,7 @@ import FragranceCard from "@/components/FragranceCard";
 import BrandingHeader from "@/components/BrandingHeader";
 import BrandingFooter from "@/components/BrandingFooter";
 import { Fragrance } from "@/hooks/useFragranceFilters";
-import { Heart, ArrowLeft } from "lucide-react";
+import { Heart, ArrowLeft, Calendar, Star } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const personalFavorites: Fragrance[] = [
@@ -229,14 +229,31 @@ const PersonalFavorites = () => {
       <section className="relative bg-gradient-to-br from-primary/5 via-background to-accent/5 py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
-            <Button 
-              variant="ghost" 
-              onClick={() => navigate('/')}
-              className="mb-6 self-start"
-            >
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
-            </Button>
+            <div className="flex flex-wrap gap-4 justify-center mb-6">
+              <Button 
+                variant="ghost" 
+                onClick={() => navigate('/')}
+              >
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Back to Home
+              </Button>
+              
+              <Button 
+                variant="outline" 
+                onClick={() => navigate('/this-months-fragrance')}
+              >
+                <Calendar className="w-4 h-4 mr-2" />
+                This Month's Pick
+              </Button>
+              
+              <Button 
+                variant="outline" 
+                onClick={() => navigate('/jordi-wishlist')}
+              >
+                <Star className="w-4 h-4 mr-2" />
+                Jordi's Wishlist
+              </Button>
+            </div>
             <div className="flex items-center justify-center gap-3 mb-6">
               <Heart className="w-8 h-8 text-primary fill-current" />
               <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">

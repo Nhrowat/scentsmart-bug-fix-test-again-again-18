@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom";
 import FragranceCard from "@/components/FragranceCard";
 import BrandingHeader from "@/components/BrandingHeader";
 import BrandingFooter from "@/components/BrandingFooter";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, Heart, Calendar } from "lucide-react";
 
 interface Fragrance {
   name: string;
@@ -106,12 +108,31 @@ const JordiWishlist = () => {
       
       <main className="flex-1 container mx-auto px-4 py-8">
         <div className="mb-12 text-center space-y-6">
-          <button
-            onClick={() => navigate("/")}
-            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            ← Back to Home
-          </button>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Button
+              variant="ghost"
+              onClick={() => navigate("/")}
+            >
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Home
+            </Button>
+            
+            <Button 
+              variant="outline" 
+              onClick={() => navigate('/personal-favorites')}
+            >
+              <Heart className="w-4 h-4 mr-2" />
+              Personal Favorites
+            </Button>
+            
+            <Button 
+              variant="outline" 
+              onClick={() => navigate('/this-months-fragrance')}
+            >
+              <Calendar className="w-4 h-4 mr-2" />
+              This Month's Pick
+            </Button>
+          </div>
           
           <div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
