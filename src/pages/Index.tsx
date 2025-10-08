@@ -714,23 +714,23 @@ const Index = () => {
             <span className="font-semibold text-accent">Save up to 91%</span> without sacrificing style.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto mb-8">
             <Button 
               variant="luxury" 
               size="lg" 
               onClick={scrollToCollection}
-              className="text-lg px-8 py-4 h-auto bg-accent/20 hover:bg-accent/30 text-accent border-accent/30"
+              className="text-lg px-8 py-6 h-auto bg-accent/20 hover:bg-accent/30 text-accent border-accent/30 font-bold"
             >
-              Browse the Collection
+              📚 Browse All Fragrances
             </Button>
             
             <Button 
               variant="hero" 
               size="lg" 
               onClick={() => navigate('/personal-favorites')}
-              className="text-lg px-8 py-4 h-auto"
+              className="text-lg px-8 py-6 h-auto font-bold"
             >
-              <Heart className="w-5 h-5 mr-2" />
+              <Heart className="w-6 h-6 mr-2" />
               Personal Favorites
             </Button>
             
@@ -738,9 +738,9 @@ const Index = () => {
               variant="luxury" 
               size="lg" 
               onClick={() => navigate('/this-months-fragrance')}
-              className="text-lg px-8 py-4 h-auto"
+              className="text-lg px-8 py-6 h-auto font-bold"
             >
-              <Calendar className="w-5 h-5 mr-2" />
+              <Calendar className="w-6 h-6 mr-2" />
               This Month's Pick
             </Button>
             
@@ -748,9 +748,9 @@ const Index = () => {
               variant="luxury" 
               size="lg" 
               onClick={() => navigate('/jordi-wishlist')}
-              className="text-lg px-8 py-4 h-auto"
+              className="text-lg px-8 py-6 h-auto bg-primary-foreground/20 hover:bg-primary-foreground/30 font-bold"
             >
-              <Star className="w-5 h-5 mr-2" />
+              <Star className="w-6 h-6 mr-2" />
               Jordi's Wishlist
             </Button>
           </div>
