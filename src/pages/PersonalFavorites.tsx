@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import FragranceCard from "@/components/FragranceCard";
 import BrandingHeader from "@/components/BrandingHeader";
 import BrandingFooter from "@/components/BrandingFooter";
-import { Fragrance } from "@/hooks/useFragranceFilters";
+import { Fragrance } from "@/hooks/useFragranceFiltersV2";
 import { Heart, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
