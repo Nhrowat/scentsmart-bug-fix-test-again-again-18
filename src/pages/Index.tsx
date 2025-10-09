@@ -7,7 +7,7 @@ import FragranceFilters from "@/components/FragranceFilters";
 import BrandingHeader from "@/components/BrandingHeader";
 import BrandingFooter from "@/components/BrandingFooter";
 import ContactButton from "@/components/ContactButton";
-import { useFragranceFiltersV2 as useFragranceFilters, Fragrance } from "@/hooks/useFragranceFiltersV2";
+import { useFragranceFilters, Fragrance } from "@/hooks/useFragranceFilters";
 import { Badge } from "@/components/ui/badge";
 import heroImage from "@/assets/hero-fragrances.jpg";
 import { useNavigate } from "react-router-dom";
