@@ -664,6 +664,132 @@ const fragrances: Fragrance[] = [
       heart: ["Sea Water", "Cedar"],
       base: ["Woody Notes"]
     }
+  },
+  {
+    name: "Babycat",
+    brand: "Yves Saint Laurent",
+    designer: "Yves Saint Laurent",
+    niche: "Designer Luxury",
+    originalPrice: 225,
+    clonePrice: 0,
+    cloneName: "",
+    scent: "A spicy, warm vanilla leather blend with smoky and resinous undertones.",
+    season: "Fall & Winter",
+    occasion: "Elegant nights, dates, and refined gatherings",
+    savings: 0,
+    available: false,
+    tags: ["Fall", "Winter", "Vanilla", "Spicy", "Leather"],
+    fragranticaUrl: "https://www.ysl-beauty.nl/parfums/le-vestiaire-des-parfums/babycat-eau-de-parfum/WW-51376YSL.html",
+    notes: {
+      top: ["Pink Pepper", "Black Pepper"],
+      heart: ["Olibanum", "Saffron"],
+      base: ["Vanilla", "Suede", "Cedarwood", "Bourbon Vanilla"]
+    }
+  },
+  {
+    name: "Spiritueuse Double Vanille",
+    brand: "Guerlain",
+    designer: "Guerlain",
+    niche: "Luxury Niche",
+    originalPrice: 330,
+    clonePrice: 60,
+    cloneName: "Vanille Dorée",
+    scent: "A luxurious, boozy, smoky vanilla with amber and benzoin warmth.",
+    season: "Fall & Winter",
+    occasion: "Romantic nights and refined indoor settings",
+    savings: 82,
+    available: true,
+    tags: ["Fall", "Winter", "Vanilla", "Amber", "Boozy"],
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Guerlain/Spiritueuse-Double-Vanille-2567.html",
+    notes: {
+      top: ["Pink Pepper", "Bergamot", "Incense"],
+      heart: ["Vanilla", "Cedar", "Ylang-Ylang"],
+      base: ["Benzoin", "Tonka Bean", "Amber"]
+    }
+  },
+  {
+    name: "Lafayette Street",
+    brand: "Bond No. 9",
+    designer: "Bond No. 9",
+    niche: "Niche",
+    originalPrice: 300,
+    clonePrice: 0,
+    cloneName: "",
+    scent: "A fresh, aromatic fougère with vanilla and ambroxan sweetness.",
+    season: "All Seasons",
+    occasion: "Casual sophistication, office, or daytime wear",
+    savings: 0,
+    available: false,
+    tags: ["All Seasons", "Fresh", "Aromatic", "Vanilla"],
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Bond-No-9/Lafayette-Street-51742.html",
+    notes: {
+      top: ["Bergamot", "Flowers", "Coriander"],
+      heart: ["Apple", "Ambroxan", "Vanilla"],
+      base: ["Tonka Bean", "Woodsy Notes", "Ambergris"]
+    }
+  },
+  {
+    name: "Sailing Day",
+    brand: "Maison Margiela Replica",
+    designer: "Maison Margiela",
+    niche: "Designer Niche",
+    originalPrice: 145,
+    clonePrice: 40,
+    cloneName: "Inspired by Sailing Day",
+    scent: "Aquatic, fresh, and clean fragrance evoking sea breeze and salty air.",
+    season: "Spring & Summer",
+    occasion: "Daytime wear, outdoor adventures, vacations",
+    savings: 72,
+    available: true,
+    tags: ["Spring", "Summer", "Aquatic", "Fresh", "Marine"],
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Maison-Martin-Margiela/Sailing-Day-44592.html",
+    notes: {
+      top: ["Sea Notes", "Aldehydes", "Coriander", "Red Pepper"],
+      heart: ["Juniper", "Iris", "Rose", "Amyl Salicylate"],
+      base: ["Seaweed", "Ambergris", "Cedar", "Amberwood"]
+    }
+  },
+  {
+    name: "Flamingo Fizz",
+    brand: "Superz Budapest",
+    designer: "Superz Budapest",
+    niche: "Niche",
+    originalPrice: 150,
+    clonePrice: 0,
+    cloneName: "",
+    scent: "Sparkling, fruity-floral champagne fragrance with bright citrus and rose tones.",
+    season: "Spring & Summer",
+    occasion: "Festive, casual, or fun social events",
+    savings: 0,
+    available: false,
+    tags: ["Spring", "Summer", "Fruity", "Floral", "Citrus"],
+    fragranticaUrl: "https://50-ml.eu/superz-budapest-flamingo-fizz-extrait-de-parfum",
+    notes: {
+      top: ["Grapefruit", "Red Berries", "Champagne Accord"],
+      heart: ["Orange Blossom", "Jasmine", "Rose"],
+      base: ["Amber", "Musk"]
+    }
+  },
+  {
+    name: "Blanche Absolue",
+    brand: "Byredo",
+    designer: "Byredo",
+    niche: "Niche",
+    originalPrice: 230,
+    clonePrice: 0,
+    cloneName: "",
+    scent: "A clean, airy floral musk — elegant, minimalist, and powdery.",
+    season: "Spring & Summer",
+    occasion: "Office, daily wear, fresh signature scent",
+    savings: 0,
+    available: false,
+    tags: ["Spring", "Summer", "Floral", "Musk", "Clean"],
+    fragranticaUrl: "https://www.fragrantica.com/perfume/Byredo/Blanche-Absolue-81469.html",
+    notes: {
+      top: ["Aldehydes", "Pink Pepper", "Violet"],
+      heart: ["Neroli", "Peony", "Orange Blossom"],
+      base: ["Musk", "Sandalwood"]
+    }
   }
 ];
 
