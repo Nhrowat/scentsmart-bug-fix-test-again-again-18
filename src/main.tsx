@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 
-// Force complete cache clear v5
+// Force complete cache clear v6 - React dedupe fix
 // Register Service Worker for PWA functionality
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {

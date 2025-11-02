@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  cacheDir: '.vite-clean',
+  cacheDir: '.vite-fresh-cache',
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
@@ -23,7 +23,15 @@ export default defineConfig(({ mode }) => ({
   },
   optimizeDeps: {
     force: true,
-    include: ['react', 'react-dom'],
+    include: ['react', 'react-dom', 'react/jsx-runtime'],
     exclude: [],
+    esbuildOptions: {
+      resolveExtensions: ['.js', '.jsx', '.ts', '.tsx'],
+    },
+  },
+  build: {
+    commonjsOptions: {
+      include: [/node_modules/],
+    },
   },
 }));
